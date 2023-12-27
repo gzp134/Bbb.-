@@ -10,9 +10,20 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
         }
         .header, .section, .footer {
             padding: 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
         .header, .footer {
             background-color: #f8f9fa;
@@ -25,6 +36,10 @@
         }
         .footer {
             text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
         }
         @media (max-width: 600px) {
             body {
@@ -49,6 +64,7 @@
         <section class="section">
             <h3>我们的产品和服务</h3>
             <p>为您提供全方位的环保产品和服务</p>
+            <img src="https://example.com/services.jpg" alt="我们的服务">
             <ul>
                 <li><a href="#">环保产品零售</a></li>
                 <li><a href="#">环保服务</a></li>
@@ -60,6 +76,7 @@
         <section class="section">
             <h3>我们的使命</h3>
             <p>我们的使命是帮助消费者和企业减少对环境的影响，同时提供一种方便的方式来获取他们所需的环保解决方案。我们相信，通过我们的努力，我们可以推动更多的人采取环保生活方式，同时也为我们的企业创造收入。</p>
+            <img src="https://example.com/mission.jpg" alt="我们的使命">
         </section>
 
         <section class="section">
